@@ -57,7 +57,7 @@
             justify-content: center;
             min-height: calc(100vh - 80px);
             background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-                        url('images/library_front.jpg') no-repeat center center/cover;
+                        url('images/home.jpg') no-repeat center center/cover;
             text-align: center;
             color: white;
             padding: 30px;
@@ -105,7 +105,7 @@
                 font-size: 36px;
             }
 
-            .hero p {
+            .welcome p {
                 font-size: 16px;
             }
         }
