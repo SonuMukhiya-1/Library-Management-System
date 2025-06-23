@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="C:\Users\Sonu Mukhiya\Desktop\1708655593620.jpg">
+    <title>Login</title>
+    <style>
+        body{
+            
+        }
+        .container{
+            text-align: center;
+            margin-top: 200px;
+            margin-left: 30%;
+            border:2px solid;
+            height: 400px;
+            width: 450px;
+            background-color: white;
+            box-shadow: 0px 0px 30px 0px;
+            border-radius: 10px;
+
+            
+        }
+        .box{
+           box-shadow: 20px;
+
+           
+           
+           
+        }
+        .h2{
+            background-color: blue;
+            height: 30px;
+            width: 300px;
+            color:white;
+            margin-left: 10px;
+            border-radius: 10px;
+        }
+        .input{
+            height: 30px;
+            width: 300px;
+            font-weight: bold;
+            border-radius: 20px;
+           padding-left: 10px;
+        }
+        .anchor{
+            text-decoration: none;
+            color: blue;
+        }
+        #forget{
+            margin-left: 20px;
+        }
+        #t1msg{
+            color: red;
+        }
+        #t2msg{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Log in</h1>
+        <div class="box">
+            <form action="C:\Users\Sonu Mukhiya\Documents\Coding code\successful.jpg" >
+                <!--User Name-->
+
+            <input type="text" placeholder="Username" class="input" name="Username"  id="t1">
+            <br>
+            <label for="" id="t1msg"></label>
+            <br>
+            <!--Password-->
+            <input type="password" placeholder="Password" class="input" name="password" id="t2">
+            <br>
+            <label for="" id="t2msg"></label>
+            <br>
+            <!--Button-->
+            <input type="button" value="Login" class="h2" id="btn1" onclick="username(),pass()">
+            <br><br>
+            
+            <input type="checkbox" >Remember
+            <a href="C:\Users\Sonu Mukhiya\Documents\Coding code\forget_password.html" class="anchor" id="forget">Forget password?</a>
+            <br><br><br>
+            <a href="#"  class="anchor">Create account</a>
+
+            
+          
+        </div>
+    </form>
+    </div>
+    <script>
+        function username()
+        {
+            let uname=document.getElementById("t1").value;
+            if(uname=="")
+             {
+                document.getElementById("t1msg").innerHTML="*<b>Please enter user name</b>";
+
+                }
+        }
+        function pass()
+        {
+            let pwd=document.getElementById("t2").value;
+            if(pwd=="")
+             {
+                document.getElementById("t2msg").innerHTML="<b>*Please enter Password</b>";
+
+                }
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
